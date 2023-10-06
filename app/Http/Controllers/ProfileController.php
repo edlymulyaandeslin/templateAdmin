@@ -3,17 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Profile;
-use App\Http\Requests\StoreProfileRequest;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use App\Http\Requests\UpdateProfileRequest;
+
 
 class ProfileController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
-        //
     }
 
     /**
@@ -21,15 +20,15 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+        // 
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProfileRequest $request)
+    public function store(Request $request)
     {
-        //
+        // 
     }
 
     /**
@@ -51,7 +50,7 @@ class ProfileController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProfileRequest $request, Profile $profile)
+    public function update(Request $request, Int $id)
     {
         //
     }
